@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Presentation</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div data-autoslide="5000" class="slides">
+			<section data-background-color="#EFEBE3">WHAT IS MVC?</section>
+			<section data-background-color="#EFEBE3">
+				<div>
+					<h3>WHAT IS MVC?</h3>
+					<ul>
+						<li>Model View Controller</li>
+						<li>Software Architectural Design Pattern</li>
+						<li>One of the most frequently used patterns</li>
+						<li>Separates application functionality </li>
+						<li>Promotes organized programming</li>
+					</ul>
+				</div>
+				<img data-size="400px" src="./image/MVC.jpg" alt="MVC">
+			</section>
+			<section data-background-color="#EFEBE3">
+				<h3>Some Web Frameworks That use MVC Concepts</h3>
+				<ul>
+					<li>Ruby on Rails(Ruby)</li>
+					<li>Sinatra (Ruby)</li>
+					<li>Laravel (PHP)</li>
+					<li>Codeigniter (PHP)</li>
+					<li>Zend (PHP)</li>
+				</ul>
+				<ul>
+					<li>Express (JS)</li>
+					<li>Backbone (JS)</li>
+					<li>Angular (JS)</li>
+					<li>Django (Python)</li>
+					<li>Flask (Python)</li>
+				</ul>
+			</section>
+			<section data-background-color="#EFEBE3">
+				<h3>Model</h3>
+				<ul>
+					<li>Data related logic</li>
+					<li>Interactions with database (SELECT, INSERT, DELETE, UPDATE)</li>
+					<li>Communicates with controller</li>
+					<li>Can sometimes update the view (Depends on framework)</li>
+				</ul>
+			</section>
+			<section data-background-color="#EFEBE3">
+				<h3>View</h3>
+				<ul>
+					<li>What the end user sees (UI)</li>
+					<li>Usually consist of HTML/CSS</li>
+					<li>Communicates with the controller</li>
+					<li>Can be passed dynamic values from the controller</li>
+					<li>Template Engines</li>
+				</ul>
+			</section>
+			<section data-background-color="#EFEBE3">
+				<h3>Controller</h3>
+				<ul>
+					<li>Receives input (from, view, url)</li>
+					<li>Processes requests (GET, POST, PUT, DELETE) </li>
+					<li>Gets data from the model</li>
+					<li>Passes data to the view</li>
+				</ul>
+			</section>
+			<section data-background-color="#EFEBE3" data-background-image="./image/mvc model.png" data-background-size="80%"
+				data-background-repeat="no-repeat">
+			</section>
+			<section data-background-color="#EFEBE3">Thanks for watching!</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		Reveal.initialize({
+			hash: true,
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/highlight/highlight.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
